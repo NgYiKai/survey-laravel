@@ -1,0 +1,47 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: laravel_app
+    working_dir: /var/www
+    volumes:
+      - .:/var/www
+    environment:
+      - DB_CONNECTION=pgsql
+      - DB_HOST=db
+      - DB_PORT=5432
+      - DB_DATABASE=laravel
+      - DB_USERNAME=postgres
+      - DB_PASSWORD=secret
+      - APP_ENV=local
+      - APP_DEBUG=true
+    depends_on:
+      - db
+    ports:
+      - "8000:80" 
+    networks:
+      - laravel
+
+  # The PostgreSQL database service
+  db:
+    image: postgres:latest
+    container_name: laravel_db
+    environment:
+      - POSTGRES_DB=laravel
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=secret
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    networks:
+      - laravel
+    ports:
+      - "5432:5432" 
+
+volumes:
+  pgdata:
+    driver: local
+
+networks:
+  laravel:
+    driver: bridge

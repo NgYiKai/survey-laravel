@@ -1,0 +1,41 @@
+# Ignore node_modules and vendor directories
+/node_modules
+/vendor
+
+# Ignore sensitive files
+.env
+.env.*    # Other environment files
+
+# Ignore compiled files
+/public/storage
+/storage/*.key
+/storage/*.log
+/storage/framework/cache/data/*
+/storage/framework/sessions/*
+/storage/framework/views/*
+/storage/logs/*
+
+# Ignore build and system files
+/.git
+/.idea
+/.vscode
+/.phpunit.result.cache
+/tests
+
+# Ignore Docker-related files
+Dockerfile
+docker-compose.yml
+
+# Ignore Nginx, Apache or other configuration files
+/nginx
+/apache
+
+# Ignore OS generated files
+*.DS_Store
+*.log
+*.swp
+*.swo
+Thumbs.db
+
+#ignore frontend react
+/react
