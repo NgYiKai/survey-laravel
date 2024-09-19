@@ -106,45 +106,121 @@ If you prefer using Docker, ensure Docker is installed and running on your machi
 
 ### Getting Started with Docker
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Clone the repo
    ```sh
    git clone https://github.com/NgYiKai/survey-laravel.git
    ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
+
+2. Navigate to the project director and copy the ```.env.example``` file to create your .env file
+   
    ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
-5. Change git remote url to avoid accidental pushes to base project
-   ```sh
-   git remote set-url origin NgYiKai/survey-laravel
-   git remote -v # confirm the changes
+    cp .env.example .env
    ```
 
+3. Run docker compose
+   ```
+   docker compose up
+   ```
+
+4. Open a shell session inside container
+
+   Replace laravel_app with the actual name of your Docker container, if different
+   
+   ```
+   docker exec -it laravel_app sh
+   ```
+   
+5. Generate the application key inside container
+
+   ```sh
+   php artisan key:generate
+   ```
+
+6. Run the database migrations inside container
+   
+    ```
+    php artisan migrate
+    ```
+
+7. Install dependencies for frontend
+
+   Navigate to the ```/react``` directory and install the required dependencies via npm
+
+   ```
+   npm install
+   ```
+
+8. Set up your environment variables
+
+   Copy the ```.env.example``` file to create your .env file
+   
+   ```js
+    cp .env.example .env
+   ```
+   Update the ```.env``` file,  the ```VITE_API_BASE_URL=``` should point to your server
+
+9. Start the development server
+    ```
+    npm run dev
+    ```
+    
 ### Getting Started without Docker
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Clone the repo
    ```sh
    git clone https://github.com/NgYiKai/survey-laravel.git
    ```
-3. Install NPM packages
+2. Install dependencies for backend
+
+   Navigate to the project directory and install the required PHP dependencies via Composer
    ```sh
+    composer install
+   ```
+3. Set up your environment variables
+
+   Copy the ```.env.example``` file to create your .env file
+   
+   ```js
+    cp .env.example .env
+   ```
+   Update the ```.env``` file with your specific settings, especially your database credentials
+   
+4. Generate the application key
+   ```sh
+   php artisan key:generate
+   ```
+
+5. Run the database migrations
+    ```
+    php artisan migrate
+    ```
+    
+6. Start the development server
+    ```
+    php artisan serve    
+    ```
+
+7. Install dependencies for frontend
+
+   Navigate to the ```/react``` directory and install the required dependencies via npm
+
+   ```
    npm install
    ```
-4. Enter your API in `config.js`
+
+8. Set up your environment variables
+
+   Copy the ```.env.example``` file to create your .env file
+   
    ```js
-   const API_KEY = 'ENTER YOUR API';
+    cp .env.example .env
    ```
-5. Change git remote url to avoid accidental pushes to base project
-   ```sh
-   git remote set-url origin NgYiKai/survey-laravel
-   git remote -v # confirm the changes
-   ```
+   Update the ```.env``` file,  the ```VITE_API_BASE_URL=``` should point to your server
+
+9. Start the development server
+    ```
+    npm run dev
+    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
