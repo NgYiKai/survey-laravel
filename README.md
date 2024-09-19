@@ -13,23 +13,23 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/github_username/repo_name">
-    <img src="public/images/screenshot.png" alt="Logo" width="1920" height="1080">
+  <a href="https://github.com/NgYiKai/survey-laravel">
+    <img src="public/images/screenshot.png" alt="Logo" style="max-width: 100%; height: auto;">
   </a>
 
-<h3 align="center">project_title</h3>
+<h3 align="center">Survey</h3>
 
   <p align="center">
-    project_description
+    Survey is an innovative platform designed to create, publish, and manage surveys seamlessly. Whether you need to collect feedback, conduct market research, or gauge customer satisfaction, this project offers a streamlined solution to distribute surveys to your target audience.
     <br />
-    <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/NgYiKai/survey-laravel"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/github_username/repo_name">View Demo</a>
+    <a href="https://github.com/NgYiKai/survey-laravel">View Demo</a>
     ·
-    <a href="https://github.com/github_username/repo_name/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
+    <a href="https://github.com/NgYiKai/survey-laravel/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
     ·
-    <a href="https://github.com/github_username/repo_name/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
+    <a href="https://github.com/NgYiKai/survey-laravel/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
   </p>
 </div>
 
@@ -58,7 +58,6 @@
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
 
@@ -67,9 +66,13 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+### Key features
 
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
+* Easy Survey Creation: Intuitive interface for building custom surveys with various question types.
+
+* Survey Publishing: Publish surveys and share them via public or private links.
+
+* Real-time Response Tracking: Monitor survey results as they come in with instant updates.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -77,14 +80,8 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 
 ### Built With
 
-* [![Next][Next.js]][Next-url]
 * [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
 * [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -112,7 +109,7 @@ If you prefer using Docker, ensure Docker is installed and running on your machi
 1. Get a free API Key at [https://example.com](https://example.com)
 2. Clone the repo
    ```sh
-   git clone https://github.com/github_username/repo_name.git
+   git clone https://github.com/NgYiKai/survey-laravel.git
    ```
 3. Install NPM packages
    ```sh
@@ -124,7 +121,7 @@ If you prefer using Docker, ensure Docker is installed and running on your machi
    ```
 5. Change git remote url to avoid accidental pushes to base project
    ```sh
-   git remote set-url origin github_username/repo_name
+   git remote set-url origin NgYiKai/survey-laravel
    git remote -v # confirm the changes
    ```
 
@@ -133,7 +130,7 @@ If you prefer using Docker, ensure Docker is installed and running on your machi
 1. Get a free API Key at [https://example.com](https://example.com)
 2. Clone the repo
    ```sh
-   git clone https://github.com/github_username/repo_name.git
+   git clone https://github.com/NgYiKai/survey-laravel.git
    ```
 3. Install NPM packages
    ```sh
@@ -145,7 +142,7 @@ If you prefer using Docker, ensure Docker is installed and running on your machi
    ```
 5. Change git remote url to avoid accidental pushes to base project
    ```sh
-   git remote set-url origin github_username/repo_name
+   git remote set-url origin NgYiKai/survey-laravel
    git remote -v # confirm the changes
    ```
 
@@ -167,12 +164,12 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-    - [ ] Nested Feature
+- [ ] Improve server side logging
+- [ ] Improve client side error handling
+- [ ] Implement view answer page
 
-See the [open issues](https://github.com/github_username/repo_name/issues) for a full list of proposed features (and known issues).
+
+See the [open issues](https://github.com/NgYiKai/survey-laravel/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -196,8 +193,8 @@ Don't forget to give the project a star! Thanks again!
 
 ### Top contributors:
 
-<a href="https://github.com/github_username/repo_name/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=github_username/repo_name" alt="contrib.rocks image" />
+<a href="https://github.com/NgYiKai/survey-laravel/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=NgYiKai/survey-laravel" alt="contrib.rocks image" />
 </a>
 
 
@@ -214,37 +211,27 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
+Ng Yi Kai - ykng0508@gmail.com
 
-Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
-
-* []()
-* []()
-* []()
+Project Link: [https://github.com/NgYiKai/survey-laravel](https://github.com/NgYiKai/survey-laravel)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/github_username/repo_name.svg?style=for-the-badge
-[contributors-url]: https://github.com/github_username/repo_name/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/github_username/repo_name.svg?style=for-the-badge
-[forks-url]: https://github.com/github_username/repo_name/network/members
-[stars-shield]: https://img.shields.io/github/stars/github_username/repo_name.svg?style=for-the-badge
-[stars-url]: https://github.com/github_username/repo_name/stargazers
-[issues-shield]: https://img.shields.io/github/issues/github_username/repo_name.svg?style=for-the-badge
-[issues-url]: https://github.com/github_username/repo_name/issues
-[license-shield]: https://img.shields.io/github/license/github_username/repo_name.svg?style=for-the-badge
-[license-url]: https://github.com/github_username/repo_name/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/NgYiKai/survey-laravel.svg?style=for-the-badge
+[contributors-url]: https://github.com/NgYiKai/survey-laravel/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/NgYiKai/survey-laravel.svg?style=for-the-badge
+[forks-url]: https://github.com/NgYiKai/survey-laravel/network/members
+[stars-shield]: https://img.shields.io/github/stars/NgYiKai/survey-laravel.svg?style=for-the-badge
+[stars-url]: https://github.com/NgYiKai/survey-laravel/stargazers
+[issues-shield]: https://img.shields.io/github/issues/NgYiKai/survey-laravel.svg?style=for-the-badge
+[issues-url]: https://github.com/NgYiKai/survey-laravel/issues
+[license-shield]: https://img.shields.io/github/license/NgYiKai/survey-laravel.svg?style=for-the-badge
+[license-url]: https://github.com/NgYiKai/survey-laravel/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/linkedin_username
 [product-screenshot]: images/screenshot.png
